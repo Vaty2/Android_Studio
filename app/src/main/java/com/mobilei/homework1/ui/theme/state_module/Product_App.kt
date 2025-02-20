@@ -20,7 +20,6 @@ import com.mobilei.homework1.ui.theme.address.MyAddressScreen
 import com.mobilei.homework1.ui.theme.order.OrderHistory
 import com.mobilei.homework1.ui.theme.LoginScreen.Login
 import com.mobilei.homework1.ui.theme.LoginScreen.Register
-import com.mobilei.homework1.ui.theme.screen.welcomeScreen
 import com.mobilei.homework1.product_module.CartButton
 import com.mobilei.homework1.product_module.ContactUs
 import com.mobilei.homework1.product_module.DrawerContent
@@ -31,6 +30,7 @@ import com.mobilei.homework1.data.productList
 import com.mobilei.homework1.ui.theme.screen.OrderConfirmationScreen
 import com.mobilei.homework1.ui.theme.screen.PaymentScreen
 import com.mobilei.homework1.ui.theme.ThemeViewModel
+import com.mobilei.homework1.ui.theme.screen.WelcomeScreen
 
 @Composable
 fun Product_App(themeViewModel: ThemeViewModel){
@@ -46,7 +46,7 @@ fun Product_App(themeViewModel: ThemeViewModel){
             startDestination = "Welcome"
         ) {
             composable("welcome") {
-                welcomeScreen(navController = navController)
+                WelcomeScreen(navController = navController)
             }
             composable(
                 "Product_Detail/{id}",
