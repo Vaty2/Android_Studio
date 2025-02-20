@@ -21,17 +21,17 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import coil3.compose.AsyncImage
+import com.mobilei.homework1.R
 
 @Composable
 fun welcomeScreen(navController: NavController){
 
-    val imagewelcomeScreen = "https://i.pinimg.com/736x/e4/3d/a5/e43da5de13dcc9159f4a5f59352e5ab4.jpg"
 
         Box (modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
         ){
         AsyncImage(
-            model = imagewelcomeScreen,
+            model = R.drawable.hello,
             contentDescription = "image back ground",
             contentScale = ContentScale.Crop,
             modifier = Modifier.fillMaxSize(),
