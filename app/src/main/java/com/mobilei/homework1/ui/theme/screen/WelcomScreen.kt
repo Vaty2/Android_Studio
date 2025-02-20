@@ -24,7 +24,7 @@ import coil3.compose.AsyncImage
 import com.mobilei.homework1.R
 
 @Composable
-fun welcomeScreen(navController: NavController){
+fun WelcomeScreen(navController: NavController){
 
 
         Box (modifier = Modifier.fillMaxSize(),
